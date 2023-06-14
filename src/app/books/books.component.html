@@ -1,0 +1,18 @@
+<div style="display:inline-block">
+  <div *ngFor="let excursion of excursions" class="exs" >
+    <div style="float:left">
+      <img style='height: 300px; width: auto; padding:10px' src="{{excursion.src}}">
+    </div>
+    <div class="cont">
+      <h3 class="card-title pricing-card-title">{{excursion.name}}</h3>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li><b>Категорія відвідувачів: </b>{{excursion.category}}</li>
+        <li><b>Тривалість: </b>{{excursion.duration}} хв.</li>
+        <li><b>Кількість учасників у групі: </b>{{excursion.count}}</li>
+        <li><b>Опис</b><br>{{excursion.desc}}</li><br>
+        <li class="cost"><b>Вартість: </b>{{excursion.cost}} грн</li>
+      </ul>
+      <a type="button" class="btn btn-lg btn-block btn-success" [routerLink]="['/order']">Замовити</a>
+    </div>
+  </div>
+</div>

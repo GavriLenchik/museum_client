@@ -1,0 +1,19 @@
+<div *ngIf="makeOrder" class="text-center" style="color: azure;">
+    <h1 class="card-title pricing-card-title" style="margin-top: 100px;color: azure;" >Дякуємо за покупку!</h1><br>
+    <h1 class="card-title pricing-card-title" style="color: azure;" >Чекаємо на Вас!</h1><br>
+    <a type="button" class="btn btn-success" style="width: max-content; font-size: large;" [routerLink]="['/']">На головну</a>
+</div>
+<div *ngIf="!makeOrder" class="text-center">
+    <div class="text-center">
+        <div class="text-center order">
+            <h1 style="margin-bottom: 50px;">Здійснення замовлення</h1>
+            <form>
+                <input type="tel" name="number" placeholder="Номер телефону" class="form-control"><br>
+                <input type="text" name="login" placeholder="Номер картки" class="form-control"><br>
+                <input type="month" name="data" placeholder="Cтрок придатності" class="form-control"><br>
+                <input type="password" name="cvv" placeholder="CVV-код" class="form-control"><br>
+                <button class="btn btn-primary mr-3 nav-link" style="margin-left: 250px;" (click)="order()">Купити</button >
+            </form>
+        </div>
+    </div>
+</div>

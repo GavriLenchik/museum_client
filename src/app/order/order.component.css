@@ -1,0 +1,9 @@
+.order{
+    margin-top: 80px; 
+    padding: 10px 40px 10px 40px; 
+    border: 2px rgb(247, 240, 240) solid; 
+    border-radius: 10px;
+    color: azure;
+    width: 700px;
+    margin-left: 180px;
+}
