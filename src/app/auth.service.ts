@@ -15,7 +15,7 @@ export class AuthService {
     let headers = new Headers();
     const body = user;
     headers.append('Content-Type', 'application/json');
-    return this.http.post('https://my-lab-project-production.up.railway.app/account/reg',
+    return this.http.post('https://museumserver-production.up.railway.app/account/reg',
     body);
 
   }
@@ -24,13 +24,13 @@ export class AuthService {
     let headers = new Headers();
     const body = user;
     headers.append('Content-Type', 'application/json');
-    return this.http.post('https://my-lab-project-production.up.railway.app/account/auth',
+    return this.http.post('https://museumserver-production.up.railway.app/account/auth',
     body);
 
   }
 
   getBooks(){
-    return this.http.get('https://my-lab-project-production.up.railway.app/account/books');
+    return this.http.get('https://museumserver-production.up.railway.app/account/books');
   }
 
 
